@@ -10,3 +10,42 @@
   --fontTwo: 'Inconsolata', monospace;
   --fontThree: 'Montserrat', sans-serif;
 }
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 0 .5rem 0 .5rem;
+}
+
+nav * .logo {
+  height: 65px;
+  width: 65px;
+}
+
+.home-button {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.nav-title {
+  margin: auto;
+  padding-left: 0.5rem;
+  font-family: 'Nunito Sans',sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+nav * .ibm {
+  height: 35px;
+  width: 120px;
+  margin: auto 0 auto 0;
+}
