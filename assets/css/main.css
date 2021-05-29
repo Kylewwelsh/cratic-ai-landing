@@ -26,7 +26,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
 
-  background-color: var(--primary);
+  background-color: #63a4c7dc;
   color: var(--secondary);
 
   z-index: 10;
@@ -89,7 +89,7 @@ nav * .ibm {
   grid-row: 3;
   color: var(--primary);
   font-family: var(--font);
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   margin: 0 auto 0 auto;
   text-align: center;
   height: min-content;
@@ -215,5 +215,33 @@ nav * .ibm {
     grid-row: 1/3;
     z-index: 1;
     margin: auto;
+  }
+
+  .oneTitle {
+    grid-column: 2/5;
+    grid-row: 3;
+    color: var(--primary);
+    font-family: var(--font);
+    font-size: 2rem;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    height: min-content;
+    z-index: 1;
+    object-fit: scale-down;
+  }
+
+  .oneButtons * button {
+    background-color: var(--primary);
+    font-family: var(--font);
+    font-size: 1.25rem;
+    color: var(--secondary);
+    text-align: center;
+    border: none;
+    outline: none;
+    width: 8.5rem;
+    height: 3.25rem;
+    border-radius: 5%;
+    cursor: pointer;
+    margin: 1rem 2rem 1rem 2rem;
   }
 }
