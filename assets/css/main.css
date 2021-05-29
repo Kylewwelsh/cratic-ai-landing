@@ -20,7 +20,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
 
   display: flex;
   flex-flow: row nowrap;
@@ -28,11 +28,13 @@ body {
 
   background-color: var(--primary);
   color: var(--secondary);
+
+  z-index: 10;
 }
 
 nav * .logo {
-  height: 65px;
-  width: 65px;
+  max-height: 65px;
+  max-width: 65px;
 }
 
 .home-button {
@@ -57,7 +59,6 @@ nav * .ibm {
 .sectionOne {
   width: 100%;
   background-color: var(--secondary);
-  overflow: hidden;
 }
 
 .grid-container {
@@ -71,15 +72,15 @@ nav * .ibm {
   grid-column: 1/-1;
   grid-row: 1/6;
   opacity: 0.5;
-  width: 100%;
+  max-width: 100%;
 }
 
 .anmLogo {
+  max-width: 400px;
+  max-height: 400px;
   grid-column: 3;
   grid-row: 1/3;
   z-index: 1;
-  height: 300px;
-  width: 300px;
   margin: auto;
 }
 
@@ -88,11 +89,12 @@ nav * .ibm {
   grid-row: 3;
   color: var(--primary);
   font-family: var(--font);
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   margin: 0 auto 0 auto;
   text-align: center;
   height: min-content;
   z-index: 1;
+  object-fit: scale-down;
 }
 
 .oneButtons {
@@ -203,4 +205,15 @@ nav * .ibm {
   text-align: center;
   margin: 1rem;
   padding-top: 1rem;
+}
+
+@media screen and (max-width: 401px) {
+  .anmLogo {
+    width: 300px;
+    height: 300px;
+    grid-column: 3;
+    grid-row: 1/3;
+    z-index: 1;
+    margin: auto;
+  }
 }
