@@ -75,7 +75,6 @@ nav * .ibm {
   max-width: 100%;
   overflow: hidden;
   object-fit: fill;
-  opacity: 0.5;
   z-index: 0;
 }
 
@@ -177,10 +176,6 @@ nav * .ibm {
   align-items: center;
   text-align: center;
   margin: 1rem 2rem 1rem 2rem;
-}
-
-.secondQuote {
-  color: rgb(194, 194, 194);
 }
 
 .dot-container {
