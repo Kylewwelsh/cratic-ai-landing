@@ -26,11 +26,10 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
 
-  background-color: #63a4c7dc;
+  background-color: var(--primary);
   color: var(--secondary);
 
   z-index: 10;
-  display: none;
 }
 
 nav * .logo {
@@ -60,6 +59,7 @@ nav * .ibm {
 .sectionOne {
   width: 100%;
   background-color: var(--secondary);
+  margin-top: 68px;
 }
 
 .grid-container {
@@ -205,6 +205,42 @@ nav * .ibm {
   text-align: center;
   margin: 1rem;
   padding-top: 1rem;
+}
+
+.sectionThree {
+  width: 100%;
+  background-color: var(--secondary);
+  padding: 2rem 0 2rem 0;
+}
+
+.threeTitle {
+  font-family: var(--fontThree);
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.threeContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 1rem 0 2rem 0;
+}
+
+.threeInfo {
+  width: 30rem;
+  margin: auto 0 auto 0
+}
+
+.infoTitle {
+  font-family: var(--font);
+  font-size: 2rem;
+}
+
+.infoText {
+  font-family: var(--fontTwo);
+  font-size: 1.25rem;
 }
 
 @media screen and (max-width: 401px) {
