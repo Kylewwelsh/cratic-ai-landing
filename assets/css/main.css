@@ -221,7 +221,7 @@ nav * .ibm {
   padding: 1rem 0 1rem 0;
 }
 
-.threeContainer {
+.flexContainer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -230,7 +230,6 @@ nav * .ibm {
 
 .threeInfo {
   width: 30rem;
-  margin: auto 0 auto 0
 }
 
 .infoTitle {
@@ -241,6 +240,39 @@ nav * .ibm {
 .infoText {
   font-family: var(--fontTwo);
   font-size: 1.25rem;
+}
+
+.sectionFour {
+  width: 100%;
+  background-color: var(--primary);
+  padding: 2rem 0 2rem 0;
+}
+
+.videoTitle {
+  color:var(--secondary);
+  font-family: var(--font);
+  font-size: 2rem;
+  margin: 0 0 auto 0;
+}
+
+.founders {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.fourInfo {
+  width: 30rem;
+  color: var(--secondary);
+}
+
+.fourTitle {
+  font-family: var(--fontThree);
+  color: var(--secondary);
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem 0 1rem 0;
 }
 
 @media screen and (max-width: 401px) {
