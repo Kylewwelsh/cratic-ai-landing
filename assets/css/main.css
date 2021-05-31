@@ -82,8 +82,10 @@ nav * .ibm {
   grid-column: 1/4;
   grid-row: 1;
   z-index: 1;
-  margin: auto;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  background-color: #8d8d8d6b;
 }
 
 .anmLogo {
@@ -94,11 +96,20 @@ nav * .ibm {
 }
 
 .oneTitle {
-  color: var(--primary);
   font-family: var(--font);
   font-size: 3.5rem;
-  font-weight: 700;
-  margin: 0 auto 0 auto;
+  font-weight: 500;
+  margin: 1rem auto 0 auto;
+  text-align: center;
+  height: min-content;
+  object-fit: scale-down;
+}
+
+.oneSubTitle {
+  font-family: var(--font);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 1rem auto 1rem auto;
   text-align: center;
   height: min-content;
   object-fit: scale-down;
@@ -228,6 +239,11 @@ nav * .ibm {
   margin: 1rem 0 2rem 0;
 }
 
+iframe {
+  max-width: 100%;
+  object-fit: scale-down;
+}
+
 .threeInfo {
   width: 30rem;
 }
@@ -240,6 +256,7 @@ nav * .ibm {
 .infoText {
   font-family: var(--fontTwo);
   font-size: 1.25rem;
+  margin: 0 0 1rem 0;
 }
 
 .sectionFour {
@@ -248,11 +265,18 @@ nav * .ibm {
   padding: 2rem 0 2rem 0;
 }
 
+.flexContainerReverse {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-evenly;
+  margin: 1rem 0 2rem 0;
+}
+
 .videoTitle {
   color:var(--secondary);
   font-family: var(--font);
   font-size: 2rem;
-  margin: 0 0 auto 0;
+  margin: 0 0 1rem 0;
 }
 
 .founders {
@@ -273,6 +297,10 @@ nav * .ibm {
   text-align: center;
   margin: 1rem;
   padding: 1rem 0 1rem 0;
+}
+
+h1.infoTitle {
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 401px) {
