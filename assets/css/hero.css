@@ -13,6 +13,8 @@
 body {
   margin: 0;
   background-color: var(--third);
+  height: 300vh;
+
 }
 
 .nav-container {
@@ -25,7 +27,23 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
 
+  color: var(--secondary);
+
+  z-index: 10;
+}
+
+.nav-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
   background-color: var(--primary);
+  transition: all .5s ease-in-out;
   color: var(--secondary);
 
   z-index: 10;
@@ -71,7 +89,8 @@ nav * .ibm {
 }
 
 .heroSection {
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
+  background-color: black;
   height: 90vh;
   display: flex;
   justify-content: center;
