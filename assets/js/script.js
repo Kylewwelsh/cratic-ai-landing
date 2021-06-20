@@ -1,3 +1,14 @@
+var myNav = document.querySelector('.nav-container');
+
+window.onscroll = function() {
+  "use strict";
+  if (document.body.scrollTop >= 600 || document.documentElement.scrollTop >= 600) {
+    myNav.classList.add("nav-scroll");
+  } else {
+    myNav.classList.remove("nav-scroll");
+  }
+};
+
 let prev = document.querySelector(".prev");
 let next = document.querySelector(".next");
 
@@ -35,14 +46,3 @@ prev.addEventListener("click", () => {
 next.addEventListener("click", () => {
   plusSlides(1);
 });
-
-var myNav = document.querySelector('.nav-container');
-
-window.onscroll = function() {
-  "use strict";
-  if (document.body.scrollTop >= 600 || document.documentElement.scrollTop >= 600) {
-    myNav.classList.add("nav-scroll");
-  } else {
-    myNav.classList.remove("nav-scroll");
-  }
-};
